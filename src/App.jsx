@@ -10,7 +10,7 @@ function App() {
   }
 
   function handleCreateRandomHexColor() {
-    const Hex = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+    const Hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
     let hexColor = "#";
 
     for (let i = 0; i < 6; i++) {
@@ -40,15 +40,10 @@ function App() {
         gap: "30px",
       }}
     >
- 
       <div style={{ display: "flex", gap: "15px" }}>
-        <button onClick={() => setTypeOfColor("hex")}>
-          Create HEX Color
-        </button>
+        <button onClick={() => setTypeOfColor("hex")}>Create HEX Color</button>
 
-        <button onClick={() => setTypeOfColor("rgb")}>
-          Create RGB Color
-        </button>
+        <button onClick={() => setTypeOfColor("rgb")}>Create RGB Color</button>
 
         <button
           onClick={
@@ -61,7 +56,6 @@ function App() {
         </button>
       </div>
 
-  
       <div style={{ color: "#fff", textAlign: "center" }}>
         <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
         <h1>{color}</h1>
